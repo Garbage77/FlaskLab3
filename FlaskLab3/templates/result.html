@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результат сортировки</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Результат сортировки</h1>
+        <p><strong>Оригинальный массив:</strong> {{ original }}</p>
+        <p><strong>Отсортированный массив:</strong> {{ sorted }}</p>
+        <div class="text-center">
+            <a href="/">Назад</a> | <a href="/history">История сортировок</a>
+        </div>
+    </div>
+</body>
+</html>

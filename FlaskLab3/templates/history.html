@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Массивы в базе данных</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Сохранённые данные:</h1>
+        <table>
+            <tr>
+                <td>id массива</td>
+                <td>Оригинальные массивы</td>
+                <td>Отсортированные массивы</td>
+                <td>Изменение массива</td>
+            </tr>
+            {% for record in records %}
+            <tr>
+                <td> {{ record.id }} </td>
+                <td> {{ record.original_array }} </td>
+                <td> {{ record.sorted_array }} </td>
+                <td><form method="GET" action="/change">
+                <input type="hidden" name="item_id" value="{{ record.id }}">
+                <button type="submit">Изменить</button>
+                </form></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <div class="text-center">
+            <form method="POST" action="/clear_history">
+                <button type="submit">Удалить все</button>
+            </form>
+            <div class="text-center">
+                <a href="/">Назад</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

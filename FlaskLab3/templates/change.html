@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение массива</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Измените массив</h1>
+        <form action="/change/sort" method="GET" class="sort-form">
+            <input type="hidden" name="id" value="{{ id }}">
+            <textarea id="array_element" name="array_element" rows="10" cols="80">{{ array_element }}</textarea>
+            <button type="submit">Сортировать</button>
+        </form>
+
+    </div>
+</body>
+</html>

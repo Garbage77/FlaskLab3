@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FlaskLab3", "FlaskLab3\FlaskLab3.pyproj", "{B0B7AABD-81FA-4F3C-828B-5C73542608DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Новая папка1", "Новая папка1", "{AD5D6965-14BC-4394-A0B1-543E6E210DE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0B7AABD-81FA-4F3C-828B-5C73542608DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B7AABD-81FA-4F3C-828B-5C73542608DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CA4D3ED-1C63-4D99-97F9-6BCA70D9F6A2}
+	EndGlobalSection
+EndGlobal
